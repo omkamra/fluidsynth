@@ -1,5 +1,7 @@
 # omkamra.fluidsynth
 
+[![Clojars Project](https://img.shields.io/clojars/v/com.github.omkamra/fluidsynth.svg)](https://clojars.org/com.github.omkamra/fluidsynth)
+
 A Clojure wrapper around the [FluidSynth](https://www.fluidsynth.org/)
 [SoundFont](https://github.com/FluidSynth/fluidsynth/wiki/SoundFont)
 synthesizer library.

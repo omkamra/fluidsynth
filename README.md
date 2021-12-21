@@ -49,11 +49,7 @@ These are the built-in defaults:
 ```clojure
 {:synth
  {:gain 1.0
-  :sample-rate 48000.0
-  :midi-channels 256}
- :audio
- {:driver "pulseaudio"
-  :period-size 1024}}
+  :midi-channels 256}}
 ```
 
 To add your own

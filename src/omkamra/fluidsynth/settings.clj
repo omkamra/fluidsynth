@@ -157,11 +157,7 @@
 (def default-settings
   {:synth
    {:gain 1.0
-    :sample-rate 48000.0
-    :midi-channels 256}
-   :audio
-   {:driver "pulseaudio"
-    :period-size 1024}})
+    :midi-channels 256}})
 
 (defn deep-merge
   "Recursively merges maps."

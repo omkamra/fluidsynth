@@ -26,6 +26,14 @@
   [&synth chan key]
   (.fluid_synth_noteoff $fl &synth chan key))
 
+(defn cc
+  [&synth chan ctrl value]
+  (.fluid_synth_cc $fl &synth chan ctrl value))
+
+(defn pitch-bend
+  [&synth chan value]
+  (.fluid_synth_pitch_bend $fl &synth chan value))
+
 (defn program-change
   [&synth chan program]
   (.fluid_synth_program_change $fl &synth chan program))
@@ -70,6 +78,10 @@
    (.fluid_synth_sfunload $fl &synth id 1))
   ([&synth id reset-presets]
    (.fluid_synth_sfunload $fl &synth id reset-presets)))
+
+(defn set-bank-offset
+  [&synth id offset]
+  (.fluid_synth_set_bank_offset &synth id offset))
 
 (defn get-cpu-load
   [&synth]

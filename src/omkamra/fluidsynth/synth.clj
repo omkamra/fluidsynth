@@ -85,7 +85,7 @@
 
 (defn set-bank-offset
   [&synth id offset]
-  (.fluid_synth_set_bank_offset &synth id offset))
+  (.fluid_synth_set_bank_offset $fl &synth id offset))
 
 (defn get-cpu-load
   [&synth]

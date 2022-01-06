@@ -42,6 +42,10 @@
   [&synth chan bank]
   (.fluid_synth_bank_select $fl &synth chan bank))
 
+(defn channel-pressure
+  [&synth chan value]
+  (.fluid_synth_channel_pressure $fl &synth chan value))
+
 (defn sfont-select
   [&synth chan sfont-id]
   (.fluid_synth_sfont_select $fl &synth chan sfont-id))

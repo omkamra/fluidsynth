@@ -52,6 +52,9 @@
   (^int fluid_synth_bank_select (^Pointer synth
                                  ^int chan
                                  ^int bank))
+  (^int fluid_synth_channel_pressure (^Pointer synth
+                                      ^int chan
+                                      ^int val))
   (^int fluid_synth_sfont_select (^Pointer synth
                                   ^int chan
                                   ^int sfont_id))
